@@ -14,9 +14,9 @@ def stworz_baze_biblioteka():
     cur = con.cursor()
     try:
         cur.execute("CREATE TABLE Ksiazki(autor, tytul)")
-        con.close()
     except:
-        con.close()
+        pass
+    con.close()
 
 
 def wyczysc_biblioteke():
